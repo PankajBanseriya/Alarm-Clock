@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>Alarm Clock</h1>
+    <div class="wrapper">
+        <div class="timer-display">
+            00:00:00 AM
+        </div>
+        <div class="container">
+            <div class="inputs">
+                <input type="number" id="hourInput" placeholder="Hour" min="1" max="12" required>
+                <input type="number" id="minuteInput" placeholder="Min" min="0" max="59" required>
+                <input type="number" id="secInput" placeholder="Sec" min="0" max="59" required>
+                <select id="periodInput">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <button id="set" type="submit">Set Alarm</button>
+            <div class="activeAlarms"></div>
+        </div>
+        <div class="alarm-clock hide">
+            <img src="./Assets/Clock-Image.png" alt="Clock-Image" class="fa-shake">
+            <div class="btn">
+                <button class="Stop-btn">Stop Alarm</button>
+                <button class="Snooze-btn">Snooze for 1 min</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
